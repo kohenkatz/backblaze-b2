@@ -1,9 +1,9 @@
 {
-    "name": "gliterd/backblaze-b2",
+    "name": "kohenkatz/backblaze-b2",
     "type": "library",
     "description": "PHP SDK for working with backblaze B2 cloud storage.",
     "keywords": ["cloud-storage", "b2", "storage", "backblaze", "cloud", "filesystem", "backup"],
-    "homepage": "https://github.com/gliterd/b2-sdk-php",
+    "homepage": "https://github.com/kohenkatz/backblaze-b2",
     "license": "MIT",
     "authors": [
         {
@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "guzzlehttp/guzzle": "^6.1"
+        "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
         "phpunit/phpunit": "4.8.*",
