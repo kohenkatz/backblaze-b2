@@ -282,6 +282,9 @@ class Client
         $maxFileCount = 1000;
         $files = [];
 
+        $prefix = isset($options['Prefix']) ? $options['Prefix'] : "";
+        $delimiter = isset($options['Delimiter']) ? $options['Delimiter'] : null;
+
         if (!isset($options['BucketId']) && isset($options['BucketName'])) {
             $options['BucketId'] = $this->getBucketIdFromName($options['BucketName']);
         }
@@ -301,6 +304,8 @@ class Client
                     'bucketId'      => $options['BucketId'],
                     'startFileName' => $nextFileName,
                     'maxFileCount'  => $maxFileCount,
+                    'prefix'        => $prefix,
+                    'delimiter'     => $delimiter
                 ],
             ]);
 
